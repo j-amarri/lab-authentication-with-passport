@@ -1,0 +1,29 @@
+<h2>Signup</h2>
+ 
+<form action="/authentication/signup" method="POST" id="form-container">
+  <div>
+    <label for="username">Username</label>
+    <input id="username" type="text" name="username">
+  </div>
+ 
+  <div>
+    <label for="password">Password</label>
+    <input id="password" type="password" name="password">
+  </div>
+
+  <label for="select-role">Role</label>
+  <select id="select-role" name="role">
+    <option value="student" selected>Student</option>
+    <option value="assistant">Assistant</option>
+    <option value="teacher">Teacher</option>
+  </select>
+ 
+  <div>
+    <button>Create account</button>
+  </div>
+ 
+  <p class="account-message">
+    Do you already have an account?
+    <a href="/login">Login</a>
+  </p>
+</form>
